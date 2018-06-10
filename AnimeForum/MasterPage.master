@@ -1,0 +1,186 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+
+    <!--Bootstrap CSS and Javascript-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous" />
+
+    <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+     <link rel="stylesheet" href="StyleSheet.css?2" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+   <style type="text/css">
+        html, body {
+            
+            height: 100%;
+        }
+
+        .acgcontainer {
+            height:100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .acgcontent {
+            flex: 1 0 auto;
+        }
+
+        .acgfooter {
+            flex-shrink: 0;
+        }
+          body {
+    background-color:#262626;
+}
+          .colin{
+
+              background-color:#cccccc;
+
+          }
+          .colin2{
+
+              background-color:#ccccff;
+               border: 3px solid #f2f2f2;
+
+          }
+          .colin3{
+
+              background-color:#cccccc;
+               border: 2px solid #f2f2f2;
+
+          }
+          .colin1{
+
+              border: 3px solid white;
+
+          }
+          
+            .tag {font-size: 20px;
+               font-family: Georgia, "Times New Roman", Times, serif;
+            font-weight: bolder;
+                color: #FFFFFF;
+                   margin: 80px;
+                    line-height: 60px;
+        } 
+        .bar {
+            background-color:#1a1a1a;
+        } 
+         .button1 {
+                    font-size: 10px;
+                    border: none;
+                   color: white;
+                    display: inline-block;
+                  margin: 8px 2px;
+                  cursor: pointer;
+                  padding: 6px 20px;
+                  width:80px;
+               
+        }
+        
+         .chb {font-size: 14px;
+               line-height: 40px;
+                 
+        } 
+           .bc1 {
+                  background-color: #cc0000;
+                           
+        }
+          .bc2 {
+                  background-color: #202060;
+                       
+        }
+          .bc3 {
+                  background-color: #ff8c1a;
+                       
+        }
+            .word {
+                  color: white;
+                       
+        }
+                               
+        
+           .footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color:#212529;
+    color: white;
+    text-align: center;
+}
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server" class="acgcontainer">
+        <div class="acgcontent">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+                <div class="container">
+                    <a class="navbar-brand" href="MainPage.aspx">ACG Society</a>
+
+                    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarResponsive">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="MainPage.aspx">Home</a>
+                            </li>
+                            <li id="file" runat="server" class="nav-item">
+                                <a class="nav-link" href="UserProf2.aspx">Profile</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html">-</a>
+                            </li>                            
+                            <asp:Button ID="Button4" runat="server" Text="Management Forum Structure" OnClick="Button4_Click"/>
+                       <%--     <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Forum
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
+                                    <a class="dropdown-item" href="portfolio-1-col.html">1</a>
+                                    <a class="dropdown-item" href="portfolio-2-col.html">2</a>
+                                    <a class="dropdown-item" href="portfolio-3-col.html">3</a>
+                                    <a class="dropdown-item" href="portfolio-4-col.html">4</a>
+                                    <a class="dropdown-item" href="portfolio-item.html">Single Portfolio Item</a>
+                                </div>
+                            </li>--%>
+                        </ul>
+                         
+                        
+                        <%
+                            if (Session["uType"] == null)
+                            {%>
+                        
+                      <asp:Button ID="Button1" runat="server" Text="Login"  CssClass="w3-button w3-red" OnClick="btnLogin_Click"/>
+                        <asp:Button ID="Button2" runat="server" Text="Register" CssClass="w3-button w3-deep-orange" OnClick="btnReg_Click" />
+                        <%}  else if(Session["uType"].Equals("Admin")||Session["uType"].Equals("User")||Session["uType"].Equals("Moderator"))      
+                        {%>
+                        <asp:Button ID="Button5" runat="server" Text="Logout"  CssClass="w3-button w3-red" OnClick="btnLog_Click"/>
+                        <%}
+                                    %>
+                    </div>
+                </div>
+            </nav>
+
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+
+        </div>
+        <div class="footer">
+  <p>Copyright © 2018 ACG Society Inc. All rights reserved.</p>
+</div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,47 @@
+﻿body {
+    color: #cfcfcf;
+}
+
+.acgtopic {
+    border-bottom: 1px solid rgba(150,150,150,0.7);
+}
+
+.acgtopic-title {
+    font-weight: bold;
+    font-size: 1rem;
+    color: #cdcdcd;
+}
+
+.acgtopic-subtext {
+    font-size: 0.8rem;
+}
+
+.acgtopic-image40px {
+    max-height: 40px;
+    max-width: 40px;
+}
+
+.acgpagetitle {
+    font-size: 2rem;
+    color: #efefef;
+}
+
+.acgsectiontitle {
+    background-color: rgba(0,0,0,0.7);
+}
+
+.acgsection {
+    background-color: rgba(10,10,10,0.8);
+}
+
+.acgsectiontitle {
+    background-color: rgba(0,0,0,0.7);
+}
+
+.acgpagination-section {
+    background-color: rgba(60,60,60,0.55);
+}
+
+.acgpage-topic {
+    background-color: rgba(40,40,40,0.75);
+}
